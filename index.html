@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo">LOGO</li>
+            <li class="items"><a href="#">Link 1</a></li>
+            <li class="items"><a href="#">Link 2</a></li>
+            <li class="items"><a href="#">Link 3</a></li>
+            <li class="items"><a href="#">Link 4</a></li>
+            <li class="menuBtn"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="bgPhoto">
+            <img src="img/okinawa-scenery-wallpaper.png" alt="Background image">
+            <h2 class="bgText">Nice Clean SASS Example</h2>
+            <h3>Example of SASS. Wrote clean. No rubbish.</h3>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus dolorum! Consectetur
+            distinctio enim eum nulla a at alias.</p>
+
+        <div class="features">
+            <div class="simplicity">
+                <img src="img/apple.png" alt="Company photo 1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="functionality">
+                <img src="img/apple.png" alt="Company photo 2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="fast">
+                <img src="img/apple.png" alt="Company photo 3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright Company Name 2023</p>
+    </footer>
+    
+
+    <script>
+        $(document).ready(function () {
+            $('.menuBtn').click(function () {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

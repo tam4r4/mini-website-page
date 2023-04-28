@@ -1,0 +1,58 @@
+
+body {
+    background-color: $websiteBgColor;
+
+    main {
+        font-family: $websiteFont;
+        color: $corporateColor;
+
+        .bgPhoto {
+            position: relative;
+
+            .bgText {
+                position: absolute;
+                padding: 0 50px;
+                bottom: 370px;
+                font-size: 65px;
+                color: $textColorLight;
+            }
+
+            h3 {
+                @extend .bgText;
+                bottom: 320px;
+                font-size: 35px;
+            }
+        }
+
+        p {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            width: 800px; // ne mogu (za sada :)) da nadjem resenje da ponistim ovu sirinu u responsive
+
+            .simplicity {
+                text-align: center;
+
+                & img {
+                    padding: 30px;
+                }
+            }
+
+            .functionality {
+                @extend .simplicity;
+                padding: 0 100px;
+            }
+
+            .fast {
+                @extend .simplicity;
+            }
+
+        }
+    }
+
+}
