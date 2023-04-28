@@ -6,7 +6,7 @@
 nav {
   background-color: $corporateColor;
   font-family: $websiteFont;
-  padding: 5px 40px;
+  padding: 0 40px;
 
 
   ul {
@@ -17,7 +17,7 @@ nav {
     justify-content: center;
 
     li {
-      padding: 15px 0;
+      padding: 10px 0;
 
       &.items {
         position: relative;
@@ -30,7 +30,7 @@ nav {
       &.logo {
         flex: 1;
         color: $textColorLight;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 400;
         user-select: none;
       }

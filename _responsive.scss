@@ -1,7 +1,7 @@
 @mixin breakpoint ($breakpoint) {
 
     @if ($breakpoint =="tablet") {
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 770px) {
             @content;
         }
     }
@@ -9,6 +9,24 @@
     @else if ($breakpoint =="phone") {
         @media screen and (max-width: 415px) {
             @content;
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    main {
+        .bgPhoto {
+            .bgText {
+                bottom: 280px;
+            }
+        }
+
+        .features {
+            align-content: center;
+
+            .functionality {
+                padding: 0;
+            }
         }
     }
 }
@@ -54,19 +72,8 @@
             }
         }
 
-        p {
-            padding: 0 25px;
-        }
-
         .features {
             flex-direction: column;
-
-            .simplicity,
-            .functionality,
-            .fast {
-                width: 100%;
-                text-align: center;
-            }
         }
     }
 }

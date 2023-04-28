@@ -51,7 +51,7 @@ table {
 nav {
   background-color: #95a5a6;
   font-family: Verdana, Tahoma, sans-serif;
-  padding: 5px 40px; }
+  padding: 0 40px; }
   nav ul {
     list-style: none;
     display: flex;
@@ -59,7 +59,7 @@ nav {
     align-items: center;
     justify-content: center; }
     nav ul li {
-      padding: 15px 0; }
+      padding: 10px 0; }
       nav ul li.items {
         position: relative;
         width: auto;
@@ -69,7 +69,7 @@ nav {
       nav ul li.logo {
         flex: 1;
         color: #fff;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 400;
         user-select: none; }
       nav ul li.items:after {
@@ -115,20 +115,17 @@ body {
       body main .bgPhoto h3 {
         bottom: 320px;
         font-size: 35px; }
-    body main p {
-      text-align: center;
-      padding-top: 30px; }
     body main .features {
       display: flex;
-      justify-content: center;
       margin: 30px auto;
-      width: 800px; }
+      max-width: 800px; }
       body main .features .simplicity, body main .features .functionality, body main .features .fast {
         text-align: center; }
-        body main .features .simplicity img, body main .features .functionality img, body main .features .fast img {
-          padding: 30px; }
-      body main .features .functionality {
-        padding: 0 100px; }
+        body main .features .simplicity img, body main .features .functionality img, body main .features .fast img,
+        body main .features .simplicity p,
+        body main .features .functionality p,
+        body main .features .fast p {
+          padding: 25px; }
 
 footer {
   max-height: 50px;
@@ -138,6 +135,14 @@ footer {
   font-family: Verdana, Tahoma, sans-serif;
   text-align: center;
   padding: 20px 0; }
+
+@media screen and (max-width: 770px) {
+  main .bgPhoto .bgText, body main .bgPhoto h3 {
+    bottom: 280px; }
+  main .features {
+    align-content: center; }
+    main .features .functionality {
+      padding: 0; } }
 
 @media screen and (max-width: 415px) {
   nav {
@@ -158,12 +163,5 @@ footer {
     flex-direction: column; }
     main .bgPhoto .bgText, body main .bgPhoto h3 {
       bottom: 200px; }
-    main p {
-      padding: 0 25px; }
     main .features {
-      flex-direction: column; }
-      main .features .simplicity, body main .features .functionality, body main .features .fast,
-      main .features .functionality,
-      main .features .fast {
-        width: 100%;
-        text-align: center; } }
+      flex-direction: column; } }
